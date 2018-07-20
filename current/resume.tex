@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in Latex
+% Author : Luis Echegorri
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://luis.echegorri.com/}{\Large Luis Echegorri}} & Email : \href{mailto:luis.echegorri@gmail.com}{luis.echegorri@gmail.com}\\
+  \href{http://luis.echegorri.com/}{http://luis.echegorri.com} & Mobile : +1-973-246-2121 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University}{Newark, NJ}
+      {BA Computer Science minor in mathematics;  summa cum laude}{May, 2017}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Computer Science I \& II, Computer Architecture, Advanced Data Structures, Linux Kernel Programming, Advanced Programming in Linux, Operating Systems, Android Development, Database Design, Cryptography and Network Security, Design in Software Engineering, Programming Language Concepts.}      
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wakefern Food Corporation}{Edison, NJ}
+      {Software Engineer}{Oct 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Mobile Override Manger}
+          {Application designed to facilitate ShopRite's front end efficiency. The application allows for a front end manager, who holds an android application, and cashiers, who are sitting at a terminal, to exchange messages as well as to request services from each other. It also allows for managers to monitor cashiers remotely, to interact with the transaction itself, and as the name suggests, to perform transaction overrides remotely. The mobile override manager project saved Wakefern around 40 labor hours per week per store at a combined savings of around 7 million per year.}      
+        \resumeItem{Jade}
+          {Web service integration into the Toshiba ACE point of sale system for a new high speed checkout scanner. Built unit tests as well as used java visual VM to profile performance in order to ensure each item being scanned took no more than 50 ms to complete in the system.}
+        \resumeItem{Jade Web API}
+          {Demo website built to send webrequests to the Jade system. This website allows a user to simulate all possible network calls that the Jade Scanner could make.}          
+        \resumeItem{Irisys Reporting Tool}
+          {Irisys is a system that interacts with cameras in order to determine how many people should be manning the front end of a ShopRite store. This tool interacts with these systems in order to generate alerts for store personal that an action should be taken.}    
+        \resumeItem{SIGUI}
+          {Moved build system into Gradle. Built enhancements as well as fixed bugs present in Toshiba's SI utility, which is the system that almost all supermarkets in the US rely on to process transactions.}             
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Hour Tracker}
+      {Native Android application built to track a persons daily activities as well as hours worked. Leveraged android design guidelines in order to create a visually appealing and simple user interface.}
+    \resumeSubItem{ShopRite Coupon Application}
+      {Built a personal application in order to make the coupon clipping process easier.}
+    \resumeSubItem{Personal Website}
+      {Website to showcase my resume as well as my programming skills.}
+    \resumeSubItem{Mass Mailing Mechanism}
+      {As part of my capstone, built a website using Grails (Groovy on Rails) that allows NJIT administrators to email subsections of their students more effortlessly.}
+    \resumeSubItem{Educational Programming Website}
+      {Website that allows teachers to create programming questions as well as test cases. Then the teacher can create a test using these questions. Once a test is created, the students can take the test, which the back-end PHP system automatically grades.} 
+    \resumeSubItem{Fast Thumbs}
+      {Native android application game where the user has to press as many of the visible buttons as possible before the allotted time runs out.}  
+  \resumeSubHeadingListEnd
+  
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {C++, C, Java, Bash, Batch, PHP, Python, JavaScript, SQL, Groovy.}
+    \resumeSubItem{Technologies}
+      {Android, Spring, CSS, XML, HTML, CSS, Grails, Git, JQuery.}
+    \resumeSubItem{Build Tools}
+      {Gradle, Maven.}
+    \resumeSubItem{Testing Frameworks}
+      {JUnit, Mockito..}
+    \resumeSubItem{IDE}
+      {Intellij, Eclipse.}      
+  \resumeSubHeadingListEnd
+  
+\section{Portfolio}
+  \resumeSubHeadingListStart
+    % \resumeSubItem{LinkedIn}
+    %   {www.linkedin.com/in/luis-echegorri.}
+    % \resumeSubItem{GitHub}
+    %   {www.github.com/Echegor.}
+    \item{
+     \textbf{LinkedIn}{: www.linkedin.com/in/luis-echegorri,}
+     \hfill
+     \textbf{GitHub}{: www.github.com/Echegor.}
+    }
+    % \item{
+    %   \textbf{GitHub}{: www.github.com/Echegor.}
+    %  \hfill
+    % }
+  \resumeSubHeadingListEnd
+
+% --------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%  \resumeSubHeadingListStart
+%     \item{
+%      \textbf{Languages}{: C++, C, Java, Bash, Batch, PHP, Python, JavaScript, SQL, Groovy,}
+%      \hfill
+%     }
+%     \item{
+%       \textbf{Technologies}{: Android, Spring, CSS, XML, HTML, CSS, Grails, Git, JQuery}
+%      \hfill
+%     }
+   
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
